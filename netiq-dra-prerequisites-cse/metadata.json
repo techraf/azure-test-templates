@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Installs NetIQ DRA prerequisites through CustomScriptExtension",
+  "description": "This template allows you to install NetIQ DRA prerequisites through CustomScriptExtension.",
+  "summary": "Installs NetIQ DRA prerequisites through CustomScriptExtension",
+  "githubUsername": "techraf",
+  "dateUpdated": "2016-11-03"
+}
