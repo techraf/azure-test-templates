@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "vmName": {
+        "type": "string",
+        "metadata": {
+          "description": "Virtual machine for NetIQ"
+        }
+      },
+      "location":{
+        "type": "string",
+        "metadata":{
+          "description":"Location name of the virtual machine"
+        }
+      }
+    },
+    "resources": [
+        {
+            "comments": "Deploy CustomScriptExtension",
+            "apiVersion": "2015-06-15",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "name": "[concat(parameters('vmName'),'/MyCustomScriptExtension')]",
+            "location": "[parameters('location')]",
+            "properties": {
+              "publisher": "Microsoft.Compute",
+              "type": "CustomScriptExtension",
+              "typeHandlerVersion": "1.8",
+              "settings": {
+                "fileUris": [
+                  "https://gist.githubusercontent.com/techraf/9abbba9de334b63dd3f208fb9a9bf48a/raw/DellAAPrerequsites.ps1"
+                ],
+                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File DellAAPrerequsites.ps1"
+              }
+            }
+        }
+    ]
+}
