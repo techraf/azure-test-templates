@@ -35,7 +35,7 @@
                   "https://gist.githubusercontent.com/techraf/d3c29638652008988310ced5407a5f0e/raw/users.csv",
                   "https://gist.githubusercontent.com/techraf/d3c29638652008988310ced5407a5f0e/raw/Wrapper.ps1"
                 ],
-                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File WrapperCanary.ps1"
+                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File Wrapper.ps1"
               }
             }
         }
