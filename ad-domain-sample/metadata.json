@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Installs Dell ActiveAdministrator prerequisites through CustomScriptExtension",
+  "description": "This template allows you to install Dell ActiveAdministrator prerequisites through CustomScriptExtension.",
+  "summary": "Installs Dell ActiveAdministrator prerequisites through CustomScriptExtension",
+  "githubUsername": "techraf",
+  "dateUpdated": "2016-11-03"
+}
