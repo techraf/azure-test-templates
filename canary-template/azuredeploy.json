@@ -13,6 +13,19 @@
         "metadata":{
           "description":"Location name of the virtual machine"
         }
+      },
+      "fileUris": {
+        "type": "string",
+        "defaultValue": "",
+        "metadata": {
+          "description": "The uri list of files. Split by a space."
+        }
+      },
+      "commandToExecute": {
+        "type": "string",
+        "metadata": {
+          "description": "The command to execute."
+        }
       }
     },
     "resources": [
@@ -27,11 +40,8 @@
               "type": "CustomScriptExtension",
               "typeHandlerVersion": "1.8",
               "settings": {
-                "fileUris": [
-                  "https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/MainScript.ps1",
-                  "https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/SubScript.ps1"
-                ],
-                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File MainScript.ps1"
+                "fileUris": "[split(parameters('fileUris'), ' ')]",
+                "commandToExecute": "[parameters('commandToExecute')]"
               }
             }
         }

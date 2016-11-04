@@ -5,5 +5,17 @@
     "vmName": {
       "value": "vmName"
     },
+    "location":{
+      "type": "string",
+      "metadata":{
+        "description":"Location name of the virtual machine"
+      }
+    },
+    "fileUris": {
+      "value": "https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/MainScript.ps1 https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/SubScript.ps1"
+    },
+    "commandToExecute": {
+      "value": "powershell.exe -ExecutionPolicy Unrestricted -File MainScript.ps1"
+    }
   }
 }
