@@ -1,0 +1,3 @@
+[submodule "canary-template/gists"]
+	path = canary-template/gists
+	url = git@gist.github.com:101343fcad980c733ec0dd909f99cc22.git
