@@ -4,3 +4,6 @@
 [submodule "ad-domain-sample/gists"]
 	path = ad-domain-sample/gists
 	url = git@gist.github.com:d3c29638652008988310ced5407a5f0e.git
+[submodule "dell-aa-prerequisites-cse/gists"]
+	path = dell-aa-prerequisites-cse/gists
+	url = git@gist.github.com:9abbba9de334b63dd3f208fb9a9bf48a.git
