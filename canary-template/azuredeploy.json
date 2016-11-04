@@ -28,9 +28,9 @@
               "typeHandlerVersion": "1.8",
               "settings": {
                 "fileUris": [
-                  "https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/ConfigurationScript.ps1"
+                  "https://gist.githubusercontent.com/techraf/101343fcad980c733ec0dd909f99cc22/raw/MainScript.ps1"
                 ],
-                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File ConfigurationScript.ps1"
+                "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File MainScript.ps1"
               }
             }
         }
