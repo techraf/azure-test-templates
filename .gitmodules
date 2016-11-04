@@ -7,3 +7,6 @@
 [submodule "dell-aa-prerequisites-cse/gists"]
 	path = dell-aa-prerequisites-cse/gists
 	url = git@gist.github.com:9abbba9de334b63dd3f208fb9a9bf48a.git
+[submodule "netiq-dra-prerequisites-cse/gists"]
+	path = netiq-dra-prerequisites-cse/gists
+	url = git@gist.github.com:fea301c23d2ad2e1f0cdde71eca9aec1.git
